@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fancy.automation.dao.TestCaseDao">
+
+    <select id="getTestCase" parameterType="com.fancy.automation.model.TestCase" resultType="com.fancy.automation.model.TestCase">
+        SELECT * FROM user WHERE 1=1
+        <if test="id!=null">
+            and id = #{id}
+        </if>
+        <if test="url!=null">
+            and url = #{url}
+        </if>
+    </select>
+
+</mapper>
