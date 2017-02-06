@@ -1,11 +1,11 @@
-package com.fancy.automation.dao;
+package com.fancy.automation.mapper;
 
 import com.fancy.automation.model.TestCase;
 
 /**
  * Created by puhui on 2017/2/4.
  */
-public interface TestCaseDao {
+public interface TestCaseMapper {
 
     /**获取测试用例*/
     public TestCase getTestCase(TestCase testCase);
